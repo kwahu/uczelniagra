@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class NiszczenieSciany : MonoBehaviour {
-	public GameObject wybuch;
+	public GameObject explosion;
+	public GameObject obstacle;
 	// Use this for initialization
 	void Start () {
 
@@ -14,10 +15,12 @@ public class NiszczenieSciany : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other ){
 
-		if (other.tag == "Player") {
-			Debug.Log("WykrywaKolizje");
-			this.gameObject.SetActive(false);
-			wybuch.SetActive(true);
+		Debug.Log ("trigger");
+
+		if (other.tag == "Grenade") {
+			Debug.Log ("Grenade");
+			obstacle.SetActive(false);
+			explosion.SetActive(true);
 		}
 	}
 }

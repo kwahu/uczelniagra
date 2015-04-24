@@ -91,7 +91,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 5fdd8886a59784d47a47705b36048e38, type: 2}
   m_ParentStateMachine: {fileID: 110798628}
-  m_Position: {x: 0, y: -72, z: 0}
+  m_Position: {x: -96, y: 72, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -122,6 +122,21 @@ State:
   - {fileID: 7400000, guid: 8815cfe11d6f434479de4ab40514d9bc, type: 2}
   m_ParentStateMachine: {fileID: 110798628}
   m_Position: {x: -36, y: -72, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110271214
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: obstacle down
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 723f59a1fb14247edb3d25f1b013f8bd, type: 2}
+  m_ParentStateMachine: {fileID: 110798628}
+  m_Position: {x: -1, y: -7, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -168,6 +183,7 @@ StateMachine:
   - {fileID: 110274290}
   - {fileID: 110208156}
   - {fileID: 110257790}
+  - {fileID: 110271214}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

@@ -4,9 +4,7 @@ using System.Collections;
 public class OnButton : MonoBehaviour {
 
 	public GameObject obstacle;
-	public AnimationClip buttonanim;
-	public AnimationClip obstacleanim;
-	public bool Wcisniecieprzycisku=false;
+	public bool buttonPressed = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +17,10 @@ public class OnButton : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.tag == "Player"&& Wcisniecieprzycisku==false) {
+		if (col.gameObject.tag == "Player") {
 			this.GetComponent<Animator>().Play("b1");
-			obstacle.GetComponent<Animator>().Play("obstacle clear");
-			Wcisniecieprzycisku=true;
+			obstacle.GetComponent<Animator>().Play("obstacle down");
+			//buttonPressed = true;
 		}
 	}
 	void StopAnim()
