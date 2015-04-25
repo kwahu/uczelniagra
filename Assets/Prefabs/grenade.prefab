@@ -12,6 +12,7 @@ GameObject:
   - 135: {fileID: 13509550}
   - 23: {fileID: 2309550}
   - 54: {fileID: 5450110}
+  - 114: {fileID: 11417844}
   m_Layer: 0
   m_Name: grenade
   m_TagString: Grenade
@@ -73,6 +74,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &11417844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72269911ed87846b0bc7c4bc2389acf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13509550
 SphereCollider:
   m_ObjectHideFlags: 1
