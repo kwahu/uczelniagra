@@ -46,6 +46,7 @@ GameObject:
   - 4: {fileID: 470108}
   - 33: {fileID: 3370106}
   - 23: {fileID: 2370106}
+  - 65: {fileID: 6518706}
   m_Layer: 0
   m_Name: powerbox4
   m_TagString: Untagged
@@ -230,6 +231,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170110}
   m_Mesh: {fileID: 4300000, guid: d379ceb87f39b3742a6caa54f2388be8, type: 3}
+--- !u!65 &6518706
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.73593557, y: 1.36052001, z: 1.21799588}
+  m_Center: {x: 2.38418565e-07, y: .59640795, z: 0}
 --- !u!65 &6574910
 BoxCollider:
   m_ObjectHideFlags: 1
